@@ -96,7 +96,7 @@ export function About() {
   const { getData, saveData, isEditMode, saveToFile } = useInlineEditor()
   // 기본 데이터
   const defaultInfo = {
-    title: "소개",
+    title: "Experience",
     subtitle: "당신의 전문성과 열정을 소개해주세요.",
     background: {"image":"","video":"","color":"","opacity":0.1},
     experienceCards: [{"icon":"briefcase","title":"회사명","period":"2020 - 현재","description":"직무 및 역할"},{"icon":"graduation","title":"학교명","period":"2016 - 2020","description":"전공 및 학위"},{"icon":"award","title":"자격증/수상","period":"2021","description":"설명을 입력하세요"}],
