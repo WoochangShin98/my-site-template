@@ -258,7 +258,7 @@ export function Header() {
                 {navConfig.items.slice(0, 4).map((item, index) => (
                   <div key={index} className="flex items-center gap-2">
                     <label className="text-sm text-muted-foreground w-20">
-                      {index === 0 ? '홈' : index === 1 ? '소개' : index === 2 ? '프로젝트' : '연락처'}
+                      {index === 0 ? '홈' : index === 1 ? 'Experience' : index === 2 ? 'Projects' : 'Contact'}
                     </label>
                     <input
                       type="text"
