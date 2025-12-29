@@ -255,7 +255,7 @@ export function Contact() {
           <div className="space-y-6">
             {/* 프로필 섹션 헤더 */}
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold text-foreground">프로필 정보</h3>
+              <h3 className="text-lg font-semibold text-foreground"> Profile Information</h3>
               {isEditMode && (
                 <button
                   onClick={() => setShowProfileModal(true)}
@@ -556,7 +556,7 @@ export function Contact() {
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[100]">
           <div className="bg-background border rounded-lg p-6 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold">프로필 정보 편집</h3>
+              <h3 className="text-lg font-semibold">Edit Profile Information</h3>
               <button
                 onClick={() => setShowProfileModal(false)}
                 className="p-1 hover:bg-muted rounded-lg transition-colors"
