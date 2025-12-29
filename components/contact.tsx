@@ -34,29 +34,55 @@ export function Contact() {
   
   // 기본 데이터
   const defaultInfo = {
-    name: "당신의 이름",
-    title: "직책/직무",
+    name: "Woochang Shin",
+    title: "Graduate student",
     company: "",
-    experience: "3년 경력",
-    phone: "010-0000-0000",
-    email: "your-email@example.com",
+    experience: "7 years of experience",
+    phone: "763-209-1221",
+    email: "tlsdnckd12@gmail.com",
     website: "",
-    location: "당신의 위치",
-    workTime: "평일 09:00 - 18:00",
-    responseTime: "24시간 이내 응답",
-    sectionTitle: "연락처",
-    sectionSubtitle: "프로젝트 문의나 협업 제안을 기다리고 있습니다. 편하신 방법으로 연락주세요!",
+    location: "Minneapolis, MN, USA",
+    workTime: "24hr",
+    responseTime: "Responds within 24 hours",
+    sectionTitle: "Contact",
+    sectionSubtitle: "Please feel free to contact me via email.",
     qrTitle: "QR 코드로 연락처 저장",
     qrSubtitle: "스캔하면 연락처가 자동으로 저장됩니다",
-    bottomMessage: "함께 성장하는 파트너가 되겠습니다.",
-    bottomSubMessage: "고객님의 성공적인 프로젝트를 위해 최선을 다하겠습니다.",
-    qrContent: ["name","phone","email","location","website"],
+    bottomMessage: "Aspiring Data Scientist Specializing in Machine Learning and Analytics",
+    bottomSubMessage: "Driven to learn, build, and grow through data-driven projects.",
+    qrContent: ["email","name"],
     profileEmoji: "👤",
     background: {"image":"","video":"","color":"","opacity":0.1}
   }
   
   // 소셜 링크 기본값 (배열 형태로 변경)
-  const defaultSocialLinks: { name: string; icon: string; url: string }[] = []
+  const defaultSocialLinks: { name: string; icon: string; url: string }[] = [
+    {
+      "name": "Instagram",
+      "icon": "instagram",
+      "url": "https://www.instagram.com/theshinwoochang?igsh=NnI2dWRsZDN4ZW5u&utm_source=qr"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/in/shinwoochang/"
+    },
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/WoochangShin98"
+    },
+    {
+      "name": "E-mail",
+      "icon": "mail",
+      "url": "tlsdnckd12@gmail.com"
+    },
+    {
+      "name": "새 링크",
+      "icon": "globe",
+      "url": ""
+    }
+  ]
   
   const [contactInfo, setContactInfo] = useState(defaultInfo)
   const [socialLinks, setSocialLinks] = useState(defaultSocialLinks)

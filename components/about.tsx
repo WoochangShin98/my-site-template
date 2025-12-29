@@ -101,10 +101,10 @@ export function About() {
     background: {"image":"","video":"","color":"","opacity":0.1},
     experienceCards: [{"icon":"briefcase","title":"Hyundai GBFMS","period":"Mar 2025 – Mar 2025","description":"Data Analyst"},{"icon":"graduation","title":"Inha University","period":"May 2024 – Feb 2025","description":"Undergraduate Research Assistant"},{"icon":"briefcase","title":"Samsung Electronics","period":"Jun 2017 – May 2024","description":"Semiconductor Engineer"},{"icon":"briefcase","title":"Republic of Korea Army","period":"Apr 2018 – Dec 2019","description":"Military Intelligence Specialist"},{"icon":"briefcase","title":"Korea Mine Rehabilitation and Mineral Resources Corporation","period":"Nov 2016 – Jun 2017","description":"Data Analyst"}],
     skills: [{"icon":"database","title":"Data Analysis","description":"Extracting insights from large-scale data \nto support data-driven decisions."},{"icon":"server","title":"Machine Learning","description":"Building and evaluating predictive models for real-world problems."},{"icon":"cpu","title":"Applied AI ","description":"Applying AI techniques to production and research environments."}],
-    storyTitle: "나의 이야기",
-    story: ["저는 기술을 통해 사람들의 삶을 더 편리하고 의미 있게 만드는 일에 열정을 가지고 있습니다.","다양한 프로젝트를 통해 문제 해결 능력과 창의적인 사고를 키워왔으며, 팀원들과의 협업을 통해 함께 성장하는 가치를 배웠습니다.","앞으로도 지속적인 학습과 도전을 통해 더 나은 개발자가 되기 위해 노력하겠습니다."],
-    storyImage: "",
-    hobbies: ["📚 독서","☕ 카페 투어","🎨 전시회 관람","✈️ 여행"]
+    storyTitle: "Education",
+    story: ["Master of Science in Data Science at the University of Minnesota (September 2025 – May 2027)","Bachelor of Engineering in Mechatronics Engineering, Inha University (March 2021 – February 2025)","Bachelor of Engineering in Software Convergence Engineering, Inha University (March 2021 – February 2025)"],
+    storyImage: "/uploads/about-image-1766965114207.svg",
+    hobbies: ["🏃 Mixed Martial Arts","📸 Photography","☕ Café hopping"]
   }
   
   const [aboutInfo, setAboutInfo] = useState(defaultInfo)

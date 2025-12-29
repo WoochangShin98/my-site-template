@@ -13,17 +13,12 @@ export function Projects() {
   const { getData, saveData, isEditMode, saveToFile } = useInlineEditor()
   // 기본 데이터
   const defaultInfo = {
-    title: "프로젝트",
-    subtitle: "프로젝트",
+    title: "Projects & Publications",
+    subtitle: "Portfolio",
     initialDisplay: 6,
     loadMoreCount: 3,
-    background: {
-      image: "",
-      video: "",
-      color: "",
-      opacity: 0.1
-    },
-    projects: [] as Array<{ image: string; video?: string; title: string; description: string }>
+    background: {"image":"","video":"","color":"","opacity":0.1},
+    projects: [{"image":"/uploads/project-0-1766965800965.png","video":"","title":"Analysis of Latent Defect Detection Using Sigma Deviation Count Labeling (SDCL)","description":"This study proposes a hybrid Process Analytical Technology (PAT) framework that combines statistical analysis and machine learning to predict latent defects in products that pass standard tests. Using a normal distribution–based labeling method called Sigma Deviation Count Labeling (SDCL), the approach identifies subtle abnormalities and trains models for defect prediction. Experimental results across two datasets demonstrate high accuracy, robustness, and generalizability, with SVM showing the most stable performance."},{"image":"/uploads/project-1766966132931-1766966133313.png","video":"","title":"Research on AI-based Defective Product Detection in Smart Manufacturing Environments","description":"This study applies artificial intelligence to sensor data from semiconductor manufacturing processes to improve defect detection and production efficiency. Using data from Samsung’s smart factory, preprocessing techniques such as dimension reduction, sampling, and scaling were employed to reduce data complexity without performance loss. The proposed approach achieved a notable improvement in defect prediction, increasing the geometric mean (GM) by approximately 3% over prior studies, highlighting the effectiveness of AI-driven analysis in smart manufacturing."},{"image":"/uploads/project-1766966488124-1766966488502.png","video":"","title":" Comparative Analysis of Sampling Methods for Imbalanced Data","description":"This study, presented at ICONI 2024 in Taipei, Taiwan, investigates class imbalance problems in machine learning by comparing over-sampling, under-sampling, and hybrid sampling techniques. Methods such as ROS, SMOTE, ADASYN, RUS, ENN, and Tomek Links were evaluated across multiple datasets, providing practical insights into improving model performance under imbalanced data conditions."},{"image":"/uploads/project-1766966662972-1766966662997.jpeg","video":"","title":" AI Clinical Documentation System","description":"Developed an end-to-end clinical documentation system utilizing Whisper (ASR), Gemini (LLM-based extraction), and a Flask ETL pipeline to generate structured medical notes stored in a normalized PostgreSQL schema."},{"image":"/uploads/project-1766966782070-1766966782094.png","video":"","title":"Wind Forecasting Using Machine Learning","description":"This project focused on forecasting wind patterns using diverse meteorological data and machine learning regression models, including LR, RF, XGB, SVR, and LASSO. The workflow covered data preprocessing, feature engineering, and performance evaluation using MSE, MAE, RMSE, and R² on both hourly and daily datasets. The project was completed as part of a university course and presented at a final academic showcase."},{"image":"/uploads/project-1766967032684-1766967032731.png","video":"","title":" AI-based Preprocessing Methods for Predicting Future Performance Degradation of Normally Operating Devices","description":"This study proposes an AI-based pre-classification method that predicts future performance degradation among devices that have passed standard tests, enabling early identification of units likely to deteriorate through a machine learning–based performance prediction model. This work has been submitted as a patent application."}] as Array<{ image: string; video?: string; title: string; description: string }>
   }
 
   const [projectsInfo, setProjectsInfo] = useState(defaultInfo)
