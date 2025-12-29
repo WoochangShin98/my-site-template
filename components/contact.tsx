@@ -58,11 +58,6 @@ export function Contact() {
   // 소셜 링크 기본값 (배열 형태로 변경)
   const defaultSocialLinks: { name: string; icon: string; url: string }[] = [
     {
-      "name": "Instagram",
-      "icon": "instagram",
-      "url": "https://www.instagram.com/theshinwoochang?igsh=NnI2dWRsZDN4ZW5u&utm_source=qr"
-    },
-    {
       "name": "LinkedIn",
       "icon": "linkedin",
       "url": "https://www.linkedin.com/in/shinwoochang/"
