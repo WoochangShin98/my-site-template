@@ -103,7 +103,7 @@ export function About() {
     skills: [{"icon":"database","title":"Data Analysis","description":"Extracting insights from large-scale data \nto support data-driven decisions."},{"icon":"server","title":"Machine Learning","description":"Building and evaluating predictive models for real-world problems."},{"icon":"cpu","title":"Applied AI ","description":"Applying AI techniques to production and research environments."}],
     storyTitle: "Education",
     story: ["Master of Science in Data Science at the University of Minnesota (September 2025 – May 2027)","Bachelor of Engineering in Mechatronics Engineering, Inha University (March 2021 – February 2025)","Bachelor of Engineering in Software Convergence Engineering, Inha University (March 2021 – February 2025)"],
-    storyImage: "/uploads/about-image-1766975790245.png",
+    storyImage: "/uploads/about-image-1766976160190.png",
     hobbies: ["🏃 Mixed Martial Arts","📸 Photography","☕ Café hopping","🏃 Boxing"]
   }
   
