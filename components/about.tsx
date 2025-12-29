@@ -419,7 +419,7 @@ export function About() {
           {(aboutInfo.hobbies.length > 0 || isEditMode) && (
             <div className="mt-16 text-center">
               <h3 className="text-2xl font-bold text-foreground mb-8">
-                취미 & 관심사
+                Hobbies & Interests
               </h3>
               <div className="flex flex-wrap justify-center gap-3">
                 {aboutInfo.hobbies.map((hobby, index) => (
@@ -714,7 +714,7 @@ export function About() {
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[2147483647]">
           <div className="bg-background border rounded-lg p-6 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold">취미 & 관심사 편집</h3>
+              <h3 className="text-lg font-semibold">Edit Hobbies & Interests</h3>
               <button
                 onClick={() => setShowHobbyModal(false)}
                 className="p-1 hover:bg-muted rounded-lg"
