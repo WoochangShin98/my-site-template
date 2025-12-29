@@ -303,7 +303,7 @@ export function Contact() {
                       <Phone className="h-5 w-5 text-green-600" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-xs text-muted-foreground">전화</p>
+                      <p className="text-xs text-muted-foreground">Phone</p>
                       <p className="text-sm font-medium text-foreground truncate">
                         {contactInfo.phone}
                       </p>
@@ -323,7 +323,7 @@ export function Contact() {
                       <Mail className="h-5 w-5 text-blue-600" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-xs text-muted-foreground">이메일</p>
+                      <p className="text-xs text-muted-foreground">Email</p>
                       <p className="text-sm font-medium text-foreground truncate">
                         {contactInfo.email}
                       </p>
@@ -339,7 +339,7 @@ export function Contact() {
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-xs text-muted-foreground">위치</p>
+                    <p className="text-xs text-muted-foreground">Location</p>
                     <p className="text-sm font-medium text-foreground truncate">
                         {contactInfo.location}
                     </p>
@@ -354,7 +354,7 @@ export function Contact() {
                     <Clock className="h-5 w-5 text-primary" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-xs text-muted-foreground">업무시간</p>
+                    <p className="text-xs text-muted-foreground">Availability</p>
                     <p className="text-sm font-medium text-foreground truncate">
                         {contactInfo.workTime}
                     </p>
@@ -365,7 +365,7 @@ export function Contact() {
 
             {/* 소셜 미디어 섹션 헤더 */}
             <div className="flex items-center justify-between mb-4 mt-8">
-              <h3 className="text-lg font-semibold text-foreground">소셜 미디어</h3>
+              <h3 className="text-lg font-semibold text-foreground">Social Media</h3>
               {isEditMode && (
                 <button
                   onClick={() => setShowSocialModal(true)}
@@ -470,12 +470,12 @@ export function Contact() {
             <Card className="p-8 border-0 shadow-xl bg-gradient-to-br from-card to-muted/20">
               <div className="text-center mb-6">
                 <h4 className="text-xl font-bold text-foreground mb-2">
-                  QR 코드로 연락처 저장
+                  Save Contact via QR Code
                 </h4>
                 <p className="text-sm text-muted-foreground mb-3">
                   {contactInfo.qrContent && contactInfo.qrContent.length > 0 
-                    ? '스캔하면 선택한 정보가 연락처로 저장됩니다'
-                    : 'QR 코드에 포함할 정보를 선택해주세요'
+                    ? 'Scanning saves the selected details to your contacts'
+                    : 'Select the details to include in the QR code'
                   }
                 </p>
                 {/* QR 설정 버튼 - 중앙 정렬 */}
@@ -507,7 +507,7 @@ export function Contact() {
               {/* QR 설명 - 선택된 정보에 따라 동적으로 변경 */}
               <div className="bg-muted/50 rounded-lg p-4">
                 <p className="text-xs text-muted-foreground text-center">
-                  📱 스캔하면 연락처가 자동 저장됩니다
+                  📱 Scan to automatically save the contact
                 </p>
                 <p className="text-xs text-muted-foreground text-center mt-1">
                   포함된 정보: {
