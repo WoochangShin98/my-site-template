@@ -510,16 +510,16 @@ export function Contact() {
                   📱 Scan to automatically save the contact
                 </p>
                 <p className="text-xs text-muted-foreground text-center mt-1">
-                  포함된 정보: {
+                  Included: {
                     contactInfo.qrContent?.map(key => {
                       switch(key) {
-                        case 'name': return '이름'
-                        case 'phone': return '전화번호'
-                        case 'email': return '이메일'
-                        case 'title': return '직함'
-                        case 'company': return '회사'
-                        case 'location': return '위치'
-                        case 'website': return '웹사이트'
+                        case 'name': return 'Name'
+                        case 'phone': return 'Phone'
+                        case 'email': return 'Email'
+                        case 'title': return 'Title'
+                        case 'company': return 'Company'
+                        case 'location': return 'Location'
+                        case 'website': return 'Website'
                         default: return key
                       }
                     }).join(', ') || '없음'
